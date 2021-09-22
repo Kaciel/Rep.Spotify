@@ -1,0 +1,318 @@
+/*
+* 
+* @author Kaciel Aires
+*/
+
+html, body, #home {
+	height: 100%;
+	overflow-x: hidden;
+	/*
+	A PROPRIEDADE "hidden" do "overflow-x" DETERMINA QUE 
+	A BARRA DE ROLAGEM NÃO SERÁ EXIBIDA E MESMO USANDO
+	O SCROLL DO MAUSE NÃO É POSSÍVEL DESLOCAR O CONTEÚDO,
+	SERÁ EXIBIDO APENAS O QUE COUBER NO ESPAÇO DE VISUALIZAÇÃO.
+	O "x" SIGNIFICA QUE A PROPRIEDADE ESTÁ SENDO APLICADA AO
+	SENTIDO HORIZONTAL, MAS PODERIA SER USADA PARA A VERTICAL
+	TAMBÉM, PORÉM NÃO FAZ SENTIDO FAZER ISSO.
+*/
+}
+
+body {
+	background: url(../imagens/capa.png),
+	url(../imagens/ruido.png),
+	linear-gradient(50deg, #ff4169, #7c26f8);
+	background-attachment: fixed;
+	/*
+	A PROPRIEDADE "backgroud-attachment: fixed" 
+	FAZ COM QUE O BACKGROUND SE TORNE FIXO, MANTENDO
+	A SUA POSIÇÃO MESMO QUANDO A TELA É ROLADA.
+*/
+	font-family: Helveltica, Arial, sans-serif;
+}
+
+
+
+
+/*
+	CONFIGURAÇÃO DE TRANSPARÊNCIA DA NAV-BAR (MENU)
+*/
+
+nav.navbar-transparente {
+	background: rgba(0,0,0,0.6);
+	padding: 15px 0;
+}
+
+
+
+/*
+	CONFIGURAÇÃO DE COR DAS LETRAS DO MENU
+	*/
+
+
+.navbar-light .navbar-nav .nav-link {
+	color: white;
+
+}
+
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #9bf0e1;
+}
+
+
+/*
+	CONFIGURAÇÃO DE COR DO MENU HAMBURGUER
+	*/
+
+.navbar-light .navbar-toggler {
+	color: rgba(0,0,0,0.5);
+	border-color: rgba(255,255,255,0.4);
+}
+
+
+/*
+	CONFIGURAÇÃO DO "divisor" DO MENU
+	*/
+
+.divisor {
+	width: 1px;
+	background: white;
+	/*
+	Um ponto super interessante é que dá pra
+	"criar" obejtos usando apenas a propriedade
+	"whidth" em combinação com a propriedade
+	"background", poderia ser feito de outras formas,
+	porém essa é extremamente simples.
+	*/
+
+	
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px; 
+
+	/*
+	As margens aqui estão sendo usadas 
+	apenas para delimitar melhor o tamanho
+	e espeçamento entre o item e as 
+	opções do menu.
+	Ele também não é exibido na opção de 
+	MENU HAMBURGUER, mesmo o menu sendo 
+	baixado para exibição das opções
+	o divisor feito com "width" não aparece.
+
+	*/
+}
+
+
+
+/*
+	CONFIGURAÇÃO DA CAPA (HOME)
+	*/
+
+.capa {
+	text-align: center;
+}
+
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	text-transform: uppercase;
+	transition: background 0.4s, color 0.4s;
+	padding: 10px 20px;
+
+}
+
+.btn-roxo {
+	background: #7c25f8;
+
+}
+
+.btn-roxo:hover {
+	background: #6207e3;
+	color: white;
+	
+}
+
+.btn-branco {
+	border: 2px solid white;
+	
+
+}
+
+.btn-branco:hover {
+	background-color: white;
+	color: black;
+	
+}
+
+
+
+/*
+	ESTRUTURA DE CONTEÚDOS
+	*/
+
+#servicos {
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#servicos h2, h3 {
+	color: #7c25f8;
+}
+
+#recursos h2, h3 {
+	color: #9bf0e1;
+}
+
+
+.album {
+	
+	padding: 10px 0px;
+
+}
+
+.rotacionar {
+	transform: rotate(30deg);
+	-ms-transforme: rotate(30deg); /* IE 9 */
+	-webkit-transform: rotate(30deg); /* PREFIXO CHROME, SAFARI, OPERA */
+	padding-left: 80px;
+}
+
+
+
+/*
+	RODAPÉ
+	*/
+
+footer {
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+/*
+	"position: relative;" 
+	COMO O NOME JÁ SUGERE A PROPRIEDADE "position" 
+	TRATA DA POSIÇÃO DO "OBJETO", NO CASO ESTAMOS TRABALHANDO
+	O "footer" E O QUE DESEJAMOS AQUI É FAZER COM QUE ELE
+	SOBREPONHA A IMAGEM DOS DOIS CELULARES QUE EXISTE NA
+	"section" LOGO ACIMA DO "footer", CONSEGUIMOS ESSE 
+	EFEITO APLICANDO O VALOR "relative" NA PROPRIEDADE 
+	"position"
+	*/
+}	
+
+
+footer h4 {
+	color: #919496;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+	font-size: 0.8em;
+	color: white;
+}
+
+footer .navbar-nav a:hover {
+	color: #9bf0e1;
+	text-decoration: none;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer ul li {
+	float: right;
+	margin: 0px 5px;
+}
+
+
+/*
+	TIPOGRAFIA
+	*/
+
+h1 {
+
+	font-weight: 900;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+	color: white;
+}
+
+h2 {
+	font-size: 3em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+
+}
+
+section#recursos p {
+	color: white;
+}
+
+/*
+	MEDIA QUERIES / CONSULTAS DE MÍDIA
+	*/
+ 
+
+/* Extra small devices (portrait phones, less than 576px)
+ No media query since this is the default in Bootstrap*/
+@media (max-width: 575.98px)  {
+   	.btn-custom {
+   		margin: 10px 15px;
+   		font-size: 1em;
+   	}
+   }
+ /*Dispositivos extra pequenos (telefones retrato, menos de 576 px)
+ Nenhuma consulta de mídia, pois este é o padrão no Bootstrap*/
+ 
+/* Small devices (landscape phones, 576px and up)
+
+Dispositivos pequenos (telefones em modo paisagem, 576 px e superior)*/
+@media (min-width: 576px) { 
+	
+	h1 {
+		font-size: 3em;
+	}
+	.btn-custom {
+   		margin: 10px 15px;
+   	}
+
+ }
+
+/* Medium devices (tablets, 768px and up)
+
+Dispositivos médios (tablets, 768 px e superior)*/
+@media (min-width: 768px) { 
+	h1 {
+		font-size: 4em;
+	}
+ }
+
+/* Large devices (desktops, 992px and up)
+
+Dispositivos grandes (desktops, 992px e superior)*/
+@media (min-width: 992px) { 
+	h1 {
+		font-size: 5em;
+	}
+ }
+
+/* Extra large devices (large desktops, 1200px and up)
+
+Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+	h1 {
+		font-size: 6em;
+	}
+ }
